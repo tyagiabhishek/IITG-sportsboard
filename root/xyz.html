@@ -5,7 +5,7 @@
         <meta charset = "utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IITG Sports</title>        
+    <title>IITG Sports</title>       
     <link rel="icon" href="images/iitglogo.png">
     <link href="css/font-awesome.min.css"rel = "stylesheet">
     <link href="css/bootstrap.min.css" rel = "stylesheet">
@@ -13,13 +13,20 @@
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
     
-
+   <!-- Include Required Prerequisites -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
+ 
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
     
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+   <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
         <div class = "container">
             <div class = "navbar-header">
                 <button type = "button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -112,8 +119,84 @@
         </div>
     </nav>
     
+    <p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </p>
+    
+    <!-- HEADING --> 
+    
+    <div class="container">
+  <div class="jumbotron">
+    <h1>Field/Hall Reservation</h1> 
+    <p>Book fields easily by just choosing from the options. A request is sent to the Sports Office from where it is accepted. </p> 
+  </div>
+</div>
+    
+    <div class="container">
+    <div class="form-group">
+  <label for="sel1"><h1>Choose the asset you wish to reserve:</h1></label>
+  <select class="form-control" id="sel1">
+    <option>Hockey Field</option>
+    <option>Football Field</option>
+    <option>Cricket Field</option>
+    <option>Basketball Court 1</option>
+    <option>Basketball Court 1</option>
+  </select>
+</div>
+    </div>
     
     
+    
+    
+    
+   <!--DATE TIME PICKER  https://eonasdan.github.io/bootstrap-datetimepicker/#minimum-setup -->
+  <!--  
+    <div class="container">
+        
+    <div class='col-md-6'>
+        <h1>From:</h1>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+        
+    <div class='col-md-6'>
+        <h1>To:</h1>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+    
+-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
 
 </script>
