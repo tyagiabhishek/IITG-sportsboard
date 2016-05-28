@@ -1,0 +1,27 @@
+body {
+    background-color: yellow;
+	 padding-top: 100px;
+}
+.modal-body{ 	text-align:center;
+		font-family: "Times New Roman", Times, serif;
+		text-transform: uppercase;
+		color : Blue;
+		font-size : 800 px;
+		font-weight:bold;
+		line-height: 200%;
+		
+}
+.modal-title{ 	font-family: "Times New Roman", Times, serif;
+		text-transform: uppercase;
+		text-align:center;
+		font-weight:bold;
+		
+
+}
+.modal-footer{ 
+		font-family: "Times New Roman", Times, serif;
+		text-transform: uppercase;
+		font-weight:bold;
+}
+.contrast {-webkit-filter: contrast(160%); filter: contrast(160%);}
+.saturate {-webkit-filter: saturate(3); filter: saturate(3);}
