@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nav</title>
+<title>SA</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -13,28 +13,99 @@
 
 </head>
 <body bgcolor="#E6E6FA">
-<nav class="navbar navbar-inverse navbar-fixed-top" style="height:15% ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" style="padding-top:40px" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav" style="padding-top:0px" >
-      <li class="active" ><a href="#">Home</a></li>
-      <li class= "dropdown"><a class="dropdown-toggle"
-      data-toggle="dropdown" href="#">
-      <span class="caret"></span>
-      Sports</a>
-      <ul class="dropdown-menu"style="background-color:	light blue;
-    color:#ffffff; line-height:4.0">
-      <li><a href="http://www.iitg.ernet.in/stud/gymkhana/sports/weightlifting.html">Weightlifting</a></li>
-      <li><a href="http://www.iitg.ernet.in/stud/gymkhana/sports/aquatics.html">Swimming</a></li>
-      </ul>
-      </li>
-      <li><a href="#">Page 2</a></li> 
-      <li><a href="#">Page 3</a></li> 
-    </ul>
-  </div>
-</nav>
+    <p><br><br><br></p>
+<nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+        <div class = "container">
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class = "navbar-brand" href="#">IITG Sports</a>
+            </div>
+            <dic id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="Index.html"><span class = "glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+                <li class = "dropdown">
+                    <a href = "#" class = "dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">Sports<span class="caret"></span></a>
+                    <ul class = "dropdown-menu">
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/aquatics.html">Aquatics</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/athletics.html">Athletics</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/badminton.html">Badminton</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/basketball.html">Basketball</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/cricket.html">Cricket</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/football.html">Football</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/hockey.html">Hockey</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/squash.html">Squash</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/tennis.html">Tennis</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/tt.html">Table Tennis</a></li>
+                        <li><a href="http://www.iitg.ernet.in/stud/gymkhana/sports/volleyball.html">Volleyball</a></li>
+                        <li><a href = "http://www.iitg.ernet.in/stud/gymkhana/sports/weightlifting.html">Weightlifting</a></li>
+<!--                         <li role = "separator" class = "divider"></li>
+                        <li class= "dropdown-header">Aquatics</a></li>
+                        <li><a href = "#">Water Polo</a></li>
+                        <li><a href = "#">Swimming</a></li> -->
+                    </ul>
+                </li>
+                <li class = "dropdown">
+                    <a href = "#" class = "dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">Courses<span class="caret"></span></a>
+                    <ul class = "dropdown-menu">
+                        <li><a href = "sa.html">SA</a></li>
+                        <li><a href = "nso.html">NSO</a></li>
+                       
+                    </ul>
+                </li>
+                     <li class = "dropdown">
+                    <a href = "#" class = "dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">Competetions<span class="caret"></span></a>
+                    <ul class = "dropdown-menu">
+                        <li><a href = "inters.html">Inter IIT</a></li>
+                        <li><a href = "spardha.html">Spardha</a></li>
+                        <li><a href = "spirit.html">Spirit</a></li>
+                        <li><a href = "staff_meet.html">Staff Meet</a></li>
+                       
+                    </ul>
+                </li>
+                    
+            </ul>
+            <!-- <ul class = "nav navbar-nav">
+                <li> <a href = "#"><img src = "iitg_logo.gif" width = "50%" height = "50%"></a></li>
+            </ul>
+ -->
+            <ul class = "nav navbar-nav navbar-right">
+                
+                
+                <li><a href="#">Swimming Pool</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                <li class = "dropdown">
+                    <a href = "#" class = "dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">Utilities<span class="caret"></span></a>
+                    <ul class = "dropdown-menu">
+                        <li><a href ="field.html">Field reservations</a></li>
+                        <li><a href ="#">Sports Stock</a></li>
+                       
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
 <div class="col-md-3 section section-slim section-front-end-web opaque hover-translucify">
 <a href="#myModal" role="button" data-toggle="modal">
 
@@ -111,8 +182,8 @@
         <h4 class="modal-title">Attendance / Timing</h4>
       </div>
       <div class="modal-body">
-        <p>SA Attendance</p>
-        <p>SA Timing</p>
+        <p><h2>SA Attendance</h2></p>
+        <p><h2>SA Timing</h2></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" style="font-weight:bold;">CLOSE</button>
