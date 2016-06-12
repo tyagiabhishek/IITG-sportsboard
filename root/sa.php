@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>NSO</title>
+<title>SA</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -12,9 +12,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </head>
-<body >
-    <p><br><br><br></p>
-<nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+<body background="images/back.jpg" style="background-repeat=no-repeat; background-attatchment: fixed;background-size: cover">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
         <div class = "container">
             <div class = "navbar-header">
                 <button type = "button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -139,6 +138,8 @@
             </div>
         </div>
     </div>
+
+
 <div class="col-md-3 section section-slim section-front-end-web opaque hover-translucify" id="volley">
 <a href="#myModal" role="button" data-toggle="modal">
      <img class="imag" src="images/Volleyball-PNG-Clipart.png" alt="VolleyBall">
@@ -215,7 +216,6 @@
 </a>
 <div class="overlay">This is some text</div>
 </div>
-
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog" style="background-color:Red width:1200px">
   <div class="modal-dialog">
@@ -227,8 +227,8 @@
         <h4 class="modal-title">Attendance / Timing</h4>
       </div>
       <div class="modal-body">
-        <p><h2>NSO Attendance</h2></p>
-        <p><h2>NSO Timing</h2></p>
+        <p><a href="files/sa/dummy.pdf"><h2>SA Attendance</h2></a></p>
+        <p><h2>SA Timing</h2></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" style="font-weight:bold;">CLOSE</button>
