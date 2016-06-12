@@ -1,3 +1,13 @@
+<?php
+if (isset($_GET['err']))
+{       
+    if($_GET['err']==1){
+        ?><script>alert("Wrong Credentials");</script><?php
+    }
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +15,17 @@
         <meta charset = "utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spardha</title>
+    <title>IITG Sports</title>        
     <link rel="icon" href="images/iitglogo.png">
     <link href="css/font-awesome.min.css"rel = "stylesheet">
     <link href="css/bootstrap.min.css" rel = "stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
+    
+
+
+    
 </head>
 
 <body>
@@ -140,7 +154,8 @@
             </div>
         </div>
     </div>
-    <body>
+    
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
 
 </script>
