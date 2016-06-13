@@ -229,13 +229,13 @@
       </div>
       <div class="modal-body">
                 <?php
-            $dir="files/sa/";
+            $dir="files/nso/";
             $files = scandir($dir);
             for($i=0,$c=0;$i<count($files);$i++)
             {
                 if(strpos($files[$i],".pdf"))
                 {
-                ?><p><a href=<?php echo $dir+$files[$i];?> ><h2><?php echo $files[$i]; ?> </a></h2></p> <?php
+                ?><p><a href=<?php echo $dir.$files[$i];?> ><h2><?php echo $files[$i]; ?> </a></h2></p> <?php
                 }
             }
 
