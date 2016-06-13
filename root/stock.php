@@ -5,7 +5,7 @@
         <meta charset = "utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IITG Sports</title>       
+    <title>Stock</title>       
     <link rel="icon" href="images/iitglogo.png">
     <link href="css/font-awesome.min.css"rel = "stylesheet">
     <link href="css/bootstrap.min.css" rel = "stylesheet">
@@ -13,20 +13,13 @@
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
     
-   <!-- Include Required Prerequisites -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
- 
-<!-- Include Date Range Picker -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+   
 
     
 </head>
 
 <body>
-   <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
         <div class = "container">
             <div class = "navbar-header">
                 <button type = "button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,11 +28,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class = "navbar-brand" href="index.html">IITG Sports</a>
+                <a class = "navbar-brand" href="index.php">IITG Sports</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav ">
-                    <li class="active"><a href="index.html"><span class = "glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+                    <li class="active"><a href="index.php"><span class = "glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
                     <li class = "dropdown">
                         <a href = "#" class = "dropdown-toggle"
                         data-toggle="dropdown"
@@ -72,8 +65,8 @@
                         aria-haspopup="true"
                         aria-expanded="false">Courses<span class="caret"></span></a>
                         <ul class = "dropdown-menu">
-                            <li><a href = "sa.html">SA</a></li>
-                            <li><a href = "nso.html">NSO</a></li>
+                            <li><a href = "sa.php">SA</a></li>
+                            <li><a href = "nso.php">NSO</a></li>
                            
                         </ul>
                     </li>
@@ -84,10 +77,10 @@
                         aria-haspopup="true"
                         aria-expanded="false">Competetions<span class="caret"></span></a>
                         <ul class = "dropdown-menu">
-                            <li><a href = "inters.html">Inter IIT</a></li>
-                            <li><a href = "spardha.html">Spardha</a></li>
-                            <li><a href = "spirit.html">Spirit</a></li>
-                            <li><a href = "staff_meet.html">Staff Meet</a></li>
+                            <li><a href = "inters.php">Inter IIT</a></li>
+                            <li><a href = "spardha.php">Spardha</a></li>
+                            <li><a href = "spirit.php">Spirit</a></li>
+                            <li><a href = "staff_meet.php">Staff Meet</a></li>
                            
                         </ul>
                     </li>
@@ -101,7 +94,7 @@
                 
                 
                     <li><a href="#">Swimming Pool</a></li>
-                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="forms.php">Forms</a></li>
                     <li class = "dropdown">
                         <a href = "#" class = "dropdown-toggle"
                         data-toggle="dropdown"
@@ -109,7 +102,7 @@
                         aria-haspopup="true"
                         aria-expanded="false">Utilities<span class="caret"></span></a>
                         <ul class = "dropdown-menu">
-                            <li><a href ="field.html">Field reservations</a></li>
+                            <li><a href ="field.php">Field reservations</a></li>
                             <li><a href ="#">Sports Stock</a></li>
                        
                         </ul>
@@ -151,6 +144,7 @@
             </div>
         </div>
     </div>
+
     
     <p>
         <br>
@@ -163,73 +157,12 @@
     
     <div class="container">
   <div class="jumbotron">
-    <h1>Field/Hall Reservation</h1> 
-    <p>Book fields easily by just choosing from the options. A request is sent to the Sports Office from where it is accepted. </p> 
+    <h1>Sports Stock</h1> 
+    <p>This page has all the Stock related database in Gymkhana Sports.</p> 
   </div>
 </div>
     
-    <div class="container">
-    <div class="form-group">
-  <label for="sel1"><h1>Choose the asset you wish to reserve:</h1></label>
-  <select class="form-control" id="sel1">
-    <option>Hockey Field</option>
-    <option>Football Field</option>
-    <option>Cricket Field</option>
-    <option>Basketball Court 1</option>
-    <option>Basketball Court 1</option>
-  </select>
-</div>
-    </div>
-    
-    
-    
-    
-    
-   <!--DATE TIME PICKER  https://eonasdan.github.io/bootstrap-datetimepicker/#minimum-setup -->
-  <!--  
-    <div class="container">
-        
-    <div class='col-md-6'>
-        <h1>From:</h1>
-        <div class="form-group">
-            <div class='input-group date' id='datetimepicker6'>
-                <input type='text' class="form-control" />
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-            </div>
-        </div>
-    </div>
-        
-    <div class='col-md-6'>
-        <h1>To:</h1>
-        <div class="form-group">
-            <div class='input-group date' id='datetimepicker7'>
-                <input type='text' class="form-control" />
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-    
-<script type="text/javascript">
-    $(function () {
-        $('#datetimepicker6').datetimepicker();
-        $('#datetimepicker7').datetimepicker({
-            useCurrent: false //Important! See issue #1075
-        });
-        $("#datetimepicker6").on("dp.change", function (e) {
-            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-        $("#datetimepicker7").on("dp.change", function (e) {
-            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-        });
-    });
-</script>
-    
--->
+   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
 
 </script>
