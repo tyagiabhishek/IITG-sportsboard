@@ -9,6 +9,6 @@ if(!$conn)
 	echo "unable to connect to database";
 	exit;
 }
-else
-echo "Successfully connected to database";
+/*else
+echo "Successfully connected to database";*/
 ?>

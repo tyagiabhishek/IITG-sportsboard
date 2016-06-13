@@ -33,7 +33,7 @@ $row= mysqli_fetch_assoc($query_run);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 	</button>
-                	<a class = "navbar-brand" href="index.html">IITG Sports</a>
+                	<a class = "navbar-brand" href="index.php">IITG Sports</a>
             	</div>
             	<ul class="nav navbar-nav navbar-right">
             		<li><a class="navbar-brand" href="logout.php?logout" style:"font-size:large;">Logout</a></li>
