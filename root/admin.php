@@ -103,11 +103,11 @@ $row= mysqli_fetch_assoc($query_run);
                       {
                           $c++;
                       ?><p><a href=<?php echo $dir.$files[$i];?> ><?php echo $c.".   ".$files[$i]; ?> </a>
-                            <button type="submit" class="btn btn-danger btn-xs delete" name="delete"  value=<?php echo $files[$i]; ?>>Delete file</button></p>
+                             <button type="submit" class="btn btn-danger btn-xs delete" name="delete" value=<?php echo $files[$i]; ?>>Delete file</button></p> 
                             <!-- <form action="delete.php" method="post">
-                              <input type="hidden" name="file_name"  >
+                              <input type="hidden" name="file_name"   >
 
-                        <button type="submit" class="btn btn-danger btn-xs" role="button" name="delete">Delete file</button> </form></p> -->
+                        <button type="submit" class="btn btn-danger btn-xs" role="button" name="delete">Delete file</button> </form></p>  -->
                        <?php
                       }
                   }
