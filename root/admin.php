@@ -12,6 +12,7 @@ $row= mysqli_fetch_assoc($query_run);
 <html>
 <head>
 <title>SA</title>
+<<<<<<< HEAD
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
@@ -24,35 +25,63 @@ $row= mysqli_fetch_assoc($query_run);
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="AdminLTE/js/app.js"></script>
 
+=======
+        <meta charset = "utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IITG Sports</title>        
+    <link rel="icon" href="images/iitglogo.png">
+    <link href="css/font-awesome.min.css"rel = "stylesheet">
+    <link href="css/bootstrap.min.css" rel = "stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+>>>>>>> e965e4d0b8a935bc3d6dc396a49cffd58e0d0d9c
 <link rel="stylesheet" href="sa.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  <script>
+
+  $(document).ready(function(){
+  $('.delete').click(function(){
+  
+    var clickvalue= $(this).val();
+    var ajaxurl = 'delete.php',
+    data = {'action':clickvalue};
+    alert ("file to be deleted: "+clickvalue);
+    $.post(ajaxurl,data,function(response){
+      alert ("File deleted successfully ");
+    } );
+} );
+}  );
+  </script>
+
 </head>
 <body>
-	<div class="row row-header">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type = "button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <div class="row row-header">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type = "button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                	</button>
-                	<a class = "navbar-brand" href="index.php">IITG Sports</a>
-            	</div>
-            	<ul class="nav navbar-nav navbar-right">
-            		<li><a class="navbar-brand" href="logout.php?logout" style:"font-size:large;">Logout</a></li>
-            	</ul>
-           	</div>
+                  </button>
+                  <a class = "navbar-brand" href="index.php">IITG Sports</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-brand" href="logout.php?logout" style:"font-size:large;">Logout</a></li>
+              </ul>
+            </div>
          </nav>
-    </div>	
+    </div>  
     <div class="row" style="padding-top: 5%; padding-bottom: 5%;">
-    	<div class="col-sm-12"><center>
-    		<h1><label class="label label-info"><?php echo 'Hello, '.$row['name']; ?></label></h1></center>
-    	</div>
+      <div class="col-sm-12"><center>
+        <h1><label class="label label-info"><?php echo 'Hello, '.$row['name']; ?></label></h1></center>
+      </div>
     </div>
 <!--     <form action="upload.php" method="post" enctype = "multipart/form-data">
       Select File to upload : 
@@ -88,18 +117,37 @@ $row= mysqli_fetch_assoc($query_run);
                       if(strpos($files[$i],".pdf"))
                       {
                           $c++;
+<<<<<<< HEAD
                       ?><p><a href=<?php echo $dir.$files[$i];?> ><h2><?php echo $c.".   ".$files[$i]; ?> </a></h2></p> <?php
+=======
+                      ?><p><a href=<?php echo $dir.$files[$i];?> ><?php echo $c.".   ".$files[$i]; ?> </a>
+                             <button type="submit" class="btn btn-danger btn-xs delete" name="delete" value=<?php echo $files[$i]; ?>>Delete file</button></p> 
+                            <!-- <form action="delete.php" method="post">
+                              <input type="hidden" name="file_name"   >
+
+                        <button type="submit" class="btn btn-danger btn-xs" role="button" name="delete">Delete file</button> </form></p>  -->
+                       <?php
+>>>>>>> e965e4d0b8a935bc3d6dc396a49cffd58e0d0d9c
                       }
                   }
 
               ?>
             </div>
             <div class="modal-footer">
+<<<<<<< HEAD
               <!-- <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal" style="font-weight:bold;">CLOSE</button> -->
               <form action="upload.php" method="post" enctype = "multipart/form-data">
               Select File to upload : 
             <input type = "file" name="fileToUpload" id= "fileToUpload">
             <input type = "submit" name = "submit" value = "Upload">
+=======
+              <h4><center>Upload a file to this folder</center></h4>
+              <!-- <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal" style="font-weight:bold;">CLOSE</button> -->
+              <form class="form-horizontal" action="upload.php" method="post" enctype = "multipart/form-data">
+              <label class="label-control" for="fileToUpload" ></label> 
+              <input type = "file" name="fileToUpload" id= "fileToUpload">
+              <button class="btn btn-success pull-right" type = "submit" name = "submit" value = "Upload">Upload</button>
+>>>>>>> e965e4d0b8a935bc3d6dc396a49cffd58e0d0d9c
             </form>
             </div>
           </div>
@@ -107,6 +155,10 @@ $row= mysqli_fetch_assoc($query_run);
       </div>
 
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> e965e4d0b8a935bc3d6dc396a49cffd58e0d0d9c
 </body>
 </html>
 

@@ -14,8 +14,13 @@ if($uploadOK=0)
 }
 else
 {
+/*	$name = basename($_FILES["fileToUpload"]["name"]);
+	$final_target = str_replace(" ","_", $name);
+	$final_target = $target_dir.$name;*/
 	if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)){
 		echo "The file ". basename($_FILES["fileToUpload"]["name"]) . " has been uploaded";
+		$final_target = str_replace(" ", "_" , $target_file);
+		rename($target_file, $final_target);
 	}
 	else {
 		echo "Sorry there was some system error";

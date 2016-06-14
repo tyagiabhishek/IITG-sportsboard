@@ -12,10 +12,21 @@ if (isset($_GET['err']))
 <html lang="en">
 
 <head>
+    
+    
         <meta charset = "utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IITG Sports</title>        
+    <title>IITG Sports</title>  
+    
+    
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+    
+    
+    
     <link rel="icon" href="images/iitglogo.png">
     <link href="css/font-awesome.min.css"rel = "stylesheet">
     <link href="css/bootstrap.min.css" rel = "stylesheet">
@@ -163,6 +174,26 @@ if (isset($_GET['err']))
             </div>
         </div>
     </div>
+    
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/aqua3.jpg" alt="aqua3" title="aqua3" id="wows1_0"/></li>
+		<li><img src="data1/images/1030454267560ce9bba6e76.jpg" alt="1030454267560ce9bba6e76" title="1030454267560ce9bba6e76" id="wows1_1"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/sportss3.jpg" alt="wow slider" title="sports-s3" id="wows1_2"/></a></li>
+		<li><img src="data1/images/aqua_slide3.jpg" alt="aqua_slide3" title="aqua_slide3" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="aqua3"><span><img src="data1/tooltips/aqua3.jpg" alt="aqua3"/>1</span></a>
+		<a href="#" title="1030454267560ce9bba6e76"><span><img src="data1/tooltips/1030454267560ce9bba6e76.jpg" alt="1030454267560ce9bba6e76"/>2</span></a>
+		<a href="#" title="sports-s3"><span><img src="data1/tooltips/sportss3.jpg" alt="sports-s3"/>3</span></a>
+		<a href="#" title="aqua_slide3"><span><img src="data1/tooltips/aqua_slide3.jpg" alt="aqua_slide3"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
 
     
     
