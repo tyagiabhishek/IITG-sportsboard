@@ -14,7 +14,10 @@ if($uploadOK=0)
 }
 else
 {
-	if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)){
+	$name = basename($_FILES["fileToUpload"]["name"]);
+	$final_target = $target_dir.$name;
+	str_replace(" ","_", $name);
+	if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $final_target)){
 		echo "The file ". basename($_FILES["fileToUpload"]["name"]) . " has been uploaded";
 	}
 	else {
