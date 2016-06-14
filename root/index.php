@@ -33,13 +33,13 @@ if (isset($_GET['err']))
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/sa.css">
 
 
     
 </head>
 
-<body>
+<body background="images/back.jpg">
     <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
         <div class = "container">
             <div class = "navbar-header">
