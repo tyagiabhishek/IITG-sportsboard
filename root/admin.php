@@ -14,7 +14,15 @@ $row= mysqli_fetch_assoc($query_run);
 <title>SA</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="AdminLTE/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="AdminLTE/css/skins/_all-skins.min.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/jquery-ui.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="AdminLTE/js/app.js"></script>
 
 <link rel="stylesheet" href="sa.css">
 
@@ -46,11 +54,59 @@ $row= mysqli_fetch_assoc($query_run);
     		<h1><label class="label label-info"><?php echo 'Hello, '.$row['name']; ?></label></h1></center>
     	</div>
     </div>
-    <form action="upload.php" method="post" enctype = "multipart/form-data">
+<!--     <form action="upload.php" method="post" enctype = "multipart/form-data">
       Select File to upload : 
       <input type = "file" name="fileToUpload" id= "fileToUpload">
       <input type = "submit" name = "submit" value = "Upload">
-    </form>
+    </form> -->
+    <div class="col-sm-7" style="padding:5%">
+      <div class="panel panel-primary">
+        <div class="panel-body">
+          <button type="button" class = "btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#samodal">
+            Click to edit SA files </button>
+          <button type="button" class = "btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#samodal">
+            Click to edit NSO files </button>
+          <button type="button" class = "btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#samodal">
+            Click to edit FORMS </button>
+          <button type="button" class = "btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#samodal">
+            Click to edit Stocks </button>
+        </div>
+      </div>
+      <div id="samodal" class="modal fade" role = "dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">List of files</h4>
+            </div>
+            <div class="modal-body">
+              <?php
+                  $dir="files/nso/";
+                  $files = scandir($dir);
+                  for($i=0,$c=0;$i<count($files);$i++)
+                  {
+                      if(strpos($files[$i],".pdf"))
+                      {
+                          $c++;
+                      ?><p><a href=<?php echo $dir.$files[$i];?> ><h2><?php echo $c.".   ".$files[$i]; ?> </a></h2></p> <?php
+                      }
+                  }
+
+              ?>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal" style="font-weight:bold;">CLOSE</button> -->
+              <form action="upload.php" method="post" enctype = "multipart/form-data">
+              Select File to upload : 
+            <input type = "file" name="fileToUpload" id= "fileToUpload">
+            <input type = "submit" name = "submit" value = "Upload">
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
 </body>
 </html>
 

@@ -20,6 +20,8 @@ else
 	else {
 		echo "Sorry there was some system error";
 	}
+	//move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+
 }
 
 //Changing uploaded file permissions to access it later

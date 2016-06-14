@@ -10,6 +10,15 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="AdminLTE/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="AdminLTE/css/skins/_all-skins.min.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/jquery-ui.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="AdminLTE/js/app.js"></script>
 
 </head>
 <body >
