@@ -234,7 +234,8 @@
             {
                 if(strpos($files[$i],".pdf"))
                 {
-                ?><p><a href=<?php echo $dir+$files[$i];?> ><h2><?php echo $files[$i]; ?> </a></h2></p> <?php
+                    $c++;
+                ?><p><a href=<?php echo "files/sa/".$files[$i];?> ><h2><?php echo $c.".   ".$files[$i]; ?> </a></h2></p> <?php
                 }
             }
 
