@@ -46,6 +46,11 @@ $row= mysqli_fetch_assoc($query_run);
     		<h1><label class="label label-info"><?php echo 'Hello, '.$row['name']; ?></label></h1></center>
     	</div>
     </div>
+    <form action="upload.php" method="post" enctype = "multipart/form-data">
+      Select File to upload : 
+      <input type = "file" name="fileToUpload" id= "fileToUpload">
+      <input type = "submit" name = "submit" value = "Upload">
+    </form>
 </body>
 </html>
 
