@@ -33,6 +33,7 @@ if (isset($_GET['err']))
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -43,12 +44,15 @@ if (isset($_GET['err']))
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="AdminLTE/js/app.js"></script>
     
+=======
+    <link rel="stylesheet" href="css/sa.css">
+>>>>>>> c3ebd9354ced29d13f56dc5914409f93cf2ef399
 
 
     
 </head>
 
-<body>
+<body background="images/back.jpg">
     <nav class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
         <div class = "container">
             <div class = "navbar-header">
