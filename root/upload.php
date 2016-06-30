@@ -21,6 +21,7 @@ else
 		echo "The file ". basename($_FILES["fileToUpload"]["name"]) . " has been uploaded";
 		$final_target = str_replace(" ", "_" , $target_file);
 		rename($target_file, $final_target);
+		echo "Uploaded bit";
 	}
 	else {
 		echo "Sorry there was some system error";
@@ -30,8 +31,8 @@ else
 }
 
 //Changing uploaded file permissions to access it later
-chmod($target_file,0777);
+chmod($final_target,0777);
 
-header("location:admin.php");
+/*header("location:admin.php");*/
 
 ?>
