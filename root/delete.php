@@ -1,7 +1,7 @@
 <?php
-if(isset($_POST['action']))
+if(isset($_POST['delete']))
 {
-	$file=$_POST['action'];
+	$file=$_POST['file_name'];
 	$file_name="./files/nso/".$file;
 	if(!unlink($file_name))
 	{
